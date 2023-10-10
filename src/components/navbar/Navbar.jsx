@@ -98,7 +98,7 @@ const Navbar = (props) => {
             <Box className="gap-5 sm:flex hidden">
               <Button
                 variant="contained"
-                className="text-campus-blue rounded-full font-bold text-[14px] w-[125px] h-50 hover:text-white shadow-none  !border !border-gray-300 border-solid"
+                className="bg-white hover:bg-campus-blue  text-campus-blue rounded-full font-bold text-[14px] w-[125px] h-50 hover:text-white shadow-none  !border !border-gray-300 border-solid"
               >
                 Masuk
               </Button>
