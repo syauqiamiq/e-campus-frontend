@@ -14,6 +14,12 @@ import VscodeLogo from "@assets/logos/vscode.png";
 import WindowsLogo from "@assets/logos/windows.png";
 import ZoomLogo from "@assets/logos/zoom.png";
 import ArrowRightLineIcon from "@assets/icons/arrow-right-line.png";
+import CalendarIcon from "@assets/icons/calendar.png";
+import BarChartIcon from "@assets/icons/bar-chart.png";
+import PadlockIcon from "@assets/icons/padlock.png";
+import DisplayIcon from "@assets/icons/display.png";
+import DocumentIcon from "@assets/icons/document.png";
+import MagnifierIcon from "@assets/icons/magnifier.png";
 import Image from "next/image";
 import { Button, Divider, Select } from "@mui/material";
 import CustomButton from "@components/button/CustomButton";
@@ -22,7 +28,7 @@ const LandingPage = () => {
 	return (
 		<Layout>
 			<div className="mt-28 ">
-				<div className="container mx-auto grid grid-cols-12 gap-10 w-full ">
+				<div className="container mx-auto grid grid-cols-12 gap-10 w-full py-20">
 					<div className="col-span-12 md:col-span-6 md:p-15 p-10 justify-center w-full h-full align-middle">
 						<h1 className="text-5xl md:text-5xl text-justify">
 							<span className="font-light">Layanan</span>{" "}
@@ -49,7 +55,7 @@ const LandingPage = () => {
 					</div>
 				</div>
 				<Divider className="w-full hidden md:block" />
-				<div className="bg-section-purple-light">
+				<div className="bg-section-purple-light py-20">
 					<div className="container mx-auto grid grid-cols-12 gap-10 bg-section-purple-light">
 						<div className="col-span-12 md:col-span-6 md:flex md:flex-col w-full p-10 justify-center items-center ">
 							<Image src={Section1} alt="section-1" width={500} height={500} />
@@ -83,7 +89,7 @@ const LandingPage = () => {
 					</div>
 				</div>
 				<Divider className="w-full hidden md:block" />
-				<div className="container mx-auto grid grid-cols-12 gap-10 w-full my-10">
+				<div className="container mx-auto grid grid-cols-12 gap-10 w-full py-20">
 					<div className="col-span-12">
 						<h1 className="text-center font-bold text-3xl">Cara Pakai</h1>
 					</div>
@@ -157,11 +163,192 @@ const LandingPage = () => {
 						<Image src={ZoomLogo} width={120} height={60} alt="logo" />
 					</div>
 				</div>
-				<div className="container mx-auto grid grid-cols-12 gap-10 w-full my-10">
+				<div className="container mx-auto grid grid-cols-12 gap-10 w-full py-20">
 					<div className="col-span-12 flex justify-center">
 						<h1 className="text-center font-bold text-3xl max-w-[500px]">
 							Apa saja fitur yang didapat jika menggunakan eCampus?
 						</h1>
+					</div>
+
+					<div className="col-span-12 md:col-span-6 border border-solid border-gray-300 rounded-md p-10">
+						<div className="flex gap-3">
+							<div className="flex flex-col justify-start">
+								<div className="h-[60px] w-[60px] rounded-md bg-campus-blue flex justify-center items-center ">
+									<Image
+										src={CalendarIcon}
+										width={40}
+										height={40}
+										alt="calendar"
+									/>
+								</div>
+							</div>
+							<div className="flex flex-col justify-end gap-3 max-w-[500px]">
+								<h3 className="font-bold text-xl">Jadwal Bimbingan</h3>
+								<p className="text-lg font-normal">
+									Membantu dalam merencanakan dan mengelola waktu bimbingan
+									menjadi lebih efektif sesuai dengan jadwal yang telah diatur.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="col-span-12 md:col-span-6 border border-solid border-gray-300 rounded-md p-10">
+						<div className="flex gap-3">
+							<div className="flex flex-col justify-start">
+								<div className="h-[60px] w-[60px] rounded-md bg-[#D4D4D4] flex justify-center items-center ">
+									<Image
+										src={BarChartIcon}
+										width={40}
+										height={40}
+										alt="bar-chart"
+									/>
+								</div>
+							</div>
+							<div className="flex flex-col justify-end gap-3 max-w-[500px]">
+								<h3 className="font-bold text-xl">Grafik Akademik</h3>
+								<p className="text-lg font-normal">
+									Memberikan kemudahan dalam merangkum, menganalisis, dan
+									memvisualisasikan perkembangan akademik.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-span-12 md:col-span-6 border border-solid border-gray-300 rounded-md p-10">
+						<div className="flex gap-3">
+							<div className="flex flex-col justify-start">
+								<div className="h-[60px] w-[60px] rounded-md bg-[#930404] flex justify-center items-center ">
+									<Image
+										src={PadlockIcon}
+										width={40}
+										height={40}
+										alt="bar-chart"
+									/>
+								</div>
+							</div>
+							<div className="flex flex-col justify-end gap-3 max-w-[500px]">
+								<h3 className="font-bold text-xl">Administrasi Kampus</h3>
+								<p className="text-lg font-normal">
+									Optimalkan pengelolaan kampus dengan berbagai fitur
+									Administrasi yang telah tersedia, meningkatkan efisiensi
+									operasional.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-span-12 md:col-span-6 border border-solid border-gray-300 rounded-md p-10">
+						<div className="flex gap-3">
+							<div className="flex flex-col justify-start">
+								<div className="h-[60px] w-[60px] rounded-md bg-[#0A9483] flex justify-center items-center ">
+									<Image
+										src={DisplayIcon}
+										width={40}
+										height={40}
+										alt="bar-chart"
+									/>
+								</div>
+							</div>
+							<div className="flex flex-col justify-end gap-3 max-w-[500px]">
+								<h3 className="font-bold text-xl">Mentoring</h3>
+								<p className="text-lg font-normal">
+									Membantu dalam melakukan mentoring antara dosen dengan
+									mahasiswa mengenai tugas akhirnya.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-span-12 md:col-span-6 border border-solid border-gray-300 rounded-md p-10">
+						<div className="flex gap-3">
+							<div className="flex flex-col justify-start">
+								<div className="h-[60px] w-[60px] rounded-md bg-[#B15704] flex justify-center items-center ">
+									<Image
+										src={DocumentIcon}
+										width={40}
+										height={40}
+										alt="bar-chart"
+									/>
+								</div>
+							</div>
+							<div className="flex flex-col justify-end gap-3 max-w-[500px]">
+								<h3 className="font-bold text-xl">Pengecekan Plagiat</h3>
+								<p className="text-lg font-normal">
+									Temukan kesamaan dan sumber potensial yang memudahkan Anda
+									untuk menghindari plagiarisme dan menjaga integritas karya
+									tulis.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-span-12 md:col-span-6 border border-solid border-gray-300 rounded-md p-10">
+						<div className="flex gap-3">
+							<div className="flex flex-col justify-start">
+								<div className="h-[60px] w-[60px] rounded-md bg-black flex justify-center items-center ">
+									<Image
+										src={MagnifierIcon}
+										width={40}
+										height={40}
+										alt="bar-chart"
+									/>
+								</div>
+							</div>
+							<div className="flex flex-col justify-end gap-3 max-w-[500px]">
+								<h3 className="font-bold text-xl">Lainnya</h3>
+								<p className="text-lg font-normal">
+									Temukan berbagai macam fitur lainnya yang telah tersedia di
+									website eCampus dalam meningkatkan administrasi kampusmu.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="bg-section-purple-light py-20">
+					<div className="container mx-auto grid grid-cols-12 gap-5 w-full ">
+						<div className="col-span-12 flex flex-col justify-center items-center mb-20">
+							<h1 className="text-center font-bold text-3xl">
+								Solusi Sempurna Untuk Administrasi Kampus Anda!
+							</h1>
+							<h3 className="text-center font-light text-lg">
+								Kami akan memberikan kinerja pelayanan yang baik dalam mengatasi
+								masalah administrasi di kampus.
+							</h3>
+						</div>
+						<div className="col-span-12 md:col-span-3 flex justify-center">
+							<div className="h-[120px] w-[220px] rounded-md bg-[#EAEDFF]">
+								<div className="flex flex-col justify-center items-center p-5">
+									<h6 className="font-bold text-4xl text-[#728CFD]">500+</h6>
+									<caption className="font-semibold text-sm">
+										Perguruan Tinggi
+									</caption>
+								</div>
+							</div>
+						</div>
+						<div className="col-span-12 md:col-span-3 flex justify-center">
+							<div className="h-[120px] w-[220px] rounded-md bg-[#FFF6DD]">
+								<div className="flex flex-col justify-center items-center p-5">
+									<h6 className="font-bold text-4xl text-[#FECD4D]">500+</h6>
+									<caption className="font-semibold text-sm">
+										Jumlah Pengguna
+									</caption>
+								</div>
+							</div>
+						</div>
+						<div className="col-span-12 md:col-span-3 flex justify-center">
+							<div className="h-[120px] w-[220px] rounded-md bg-[#E7FBDF]">
+								<div className="flex flex-col justify-center items-center p-5">
+									<h6 className="font-bold text-4xl text-[#389913]">500+</h6>
+									<caption className="font-semibold text-sm">
+										Pengguna Senang
+									</caption>
+								</div>
+							</div>
+						</div>
+						<div className="col-span-12 md:col-span-3 flex justify-center">
+							<div className="h-[120px] w-[220px] rounded-md bg-[#FFF0E9]">
+								<div className="flex flex-col justify-center items-center p-5">
+									<h6 className="font-bold text-4xl text-[#FF8549]">500+</h6>
+									<caption className="font-semibold text-sm">Tampilan</caption>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

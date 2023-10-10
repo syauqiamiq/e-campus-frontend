@@ -63,15 +63,15 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="border-t border-gray-300 border-solid">
+			<div className="border-t border-gray-300 border-solid ">
 				<div className="container mx-auto m-5 grid grid-cols-4 w-full h-5">
-					<div className="col-span-2">
+					<div className="col-span-4 md:col-span-2 flex justify-center md:justify-start">
 						<h6>
 							Copyright © 2023 <span className="font-bold">eCampus</span>.
 							Dibuat dengan ❤️️
 						</h6>
 					</div>
-					<div className="col-span-2 flex gap-16 justify-end">
+					<div className="col-span-4 md:col-span-2 justify-center flex gap-16 md:justify-end">
 						<h6 className="font-bold">Beranda</h6>
 						<h6 className="font-bold">Team</h6>
 						<h6 className="font-bold">Privasi</h6>
