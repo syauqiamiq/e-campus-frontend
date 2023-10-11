@@ -88,7 +88,7 @@ const Navbar = (props) => {
 						</Box>
 						<Box className="gap-5 sm:flex hidden">
 							<CustomButton type="outlined" title="Masuk" />
-							<CustomButton type="contained" title="Daftar" />
+							<CustomButton type="contained" title="Daftar"/>
 						</Box>
 					</Toolbar>
 				</Box>
