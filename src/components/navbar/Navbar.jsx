@@ -17,6 +17,7 @@ import Button from "@mui/material/Button";
 import Image from "next/image";
 import AppLogo from "@assets/logos/eCampusLogo.png";
 import CustomButton from "@components/button/CustomButton";
+import { useRouter } from "next/router";
 
 const drawerWidth = 240;
 const navItems = ["Beranda", "Tentang", "Cara Pakai", "Fitur", "Bantuan"];
@@ -25,6 +26,8 @@ const Navbar = (props) => {
 	const { window } = props;
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 
+	const router = useRouter();
+
 	const handleDrawerToggle = () => {
 		setMobileOpen((prevState) => !prevState);
 	};
@@ -32,7 +35,15 @@ const Navbar = (props) => {
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
 			<Box className="flex justify-center w-full p-5">
-				<Image src={AppLogo} alt="ecampus-logo" width={186} height={9} />
+				<div className="cursor-pointer">
+					<Image
+						src={AppLogo}
+						alt="ecampus-logo"
+						width={186}
+						height={9}
+						onClick={() => router.replace("/")}
+					/>
+				</div>
 			</Box>
 
 			<Divider />
@@ -47,7 +58,13 @@ const Navbar = (props) => {
 
 				<Box className="gap-5 sm:hidden flex flex-col p-5">
 					<CustomButton type="outlined" title="Masuk" />
-					<CustomButton type="contained" title="Daftar" />
+					<CustomButton
+						type="contained"
+						title="Daftar"
+						onClick={() => {
+							router.push("/sign-up");
+						}}
+					/>
 				</Box>
 			</List>
 		</Box>
@@ -72,8 +89,14 @@ const Navbar = (props) => {
 						>
 							<MenuIcon />
 						</IconButton>
-						<Box className="flex md:flex-grow-1 w-full md:w-[200px] justify-center">
-							<Image src={AppLogo} alt="ecampus-logo" width={186} height={52} />
+						<Box className="flex md:flex-grow-1 w-full md:w-[200px] justify-center cursor-pointer">
+							<Image
+								src={AppLogo}
+								alt="ecampus-logo"
+								width={186}
+								height={52}
+								onClick={() => router.replace("/")}
+							/>
 						</Box>
 
 						<Box
@@ -88,7 +111,13 @@ const Navbar = (props) => {
 						</Box>
 						<Box className="gap-5 sm:flex hidden">
 							<CustomButton type="outlined" title="Masuk" />
-							<CustomButton type="contained" title="Daftar" />
+							<CustomButton
+								type="contained"
+								title="Daftar"
+								onClick={() => {
+									router.push("/sign-up");
+								}}
+							/>
 						</Box>
 					</Toolbar>
 				</Box>

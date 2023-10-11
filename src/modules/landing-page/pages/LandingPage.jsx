@@ -315,9 +315,7 @@ const LandingPage = () => {
 							<div className="h-[120px] w-[220px] rounded-md bg-[#EAEDFF]">
 								<div className="flex flex-col justify-center items-center p-5">
 									<h6 className="font-bold text-4xl text-[#728CFD]">500+</h6>
-									<caption className="font-semibold text-sm">
-										Perguruan Tinggi
-									</caption>
+									<h6 className="font-semibold text-sm">Perguruan Tinggi</h6>
 								</div>
 							</div>
 						</div>
@@ -325,9 +323,7 @@ const LandingPage = () => {
 							<div className="h-[120px] w-[220px] rounded-md bg-[#FFF6DD]">
 								<div className="flex flex-col justify-center items-center p-5">
 									<h6 className="font-bold text-4xl text-[#FECD4D]">500+</h6>
-									<caption className="font-semibold text-sm">
-										Jumlah Pengguna
-									</caption>
+									<h6 className="font-semibold text-sm">Jumlah Pengguna</h6>
 								</div>
 							</div>
 						</div>
@@ -335,9 +331,7 @@ const LandingPage = () => {
 							<div className="h-[120px] w-[220px] rounded-md bg-[#E7FBDF]">
 								<div className="flex flex-col justify-center items-center p-5">
 									<h6 className="font-bold text-4xl text-[#389913]">500+</h6>
-									<caption className="font-semibold text-sm">
-										Pengguna Senang
-									</caption>
+									<h6 className="font-semibold text-sm">Pengguna Senang</h6>
 								</div>
 							</div>
 						</div>
@@ -345,7 +339,7 @@ const LandingPage = () => {
 							<div className="h-[120px] w-[220px] rounded-md bg-[#FFF0E9]">
 								<div className="flex flex-col justify-center items-center p-5">
 									<h6 className="font-bold text-4xl text-[#FF8549]">500+</h6>
-									<caption className="font-semibold text-sm">Tampilan</caption>
+									<h6 className="font-semibold text-sm">Tampilan</h6>
 								</div>
 							</div>
 						</div>
