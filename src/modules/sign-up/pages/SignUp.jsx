@@ -19,7 +19,7 @@ const SignUp = () => {
   return (
     <Layout>
       <div class="flex justify-center p-3">
-        <div className="mt-28 bg-[#FFFFFF] w-fit">
+        <div className="mt-28 bg-[#FFFFFF] w-fit rounded-xl">
             <div className="border-b border-bot p-5">
                 <h1 className="font-bold text-xl">Buat Akun</h1>
                 <p className="text-sm md:text-base">Pilih kategori yang sesuai dengan peran anda </p>
