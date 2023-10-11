@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         "campus-blue": "#0070BA",
+        "border-bot": "#F0F0F0"
       },
       backgroundColor: {
         "campus-blue": "#0070BA",
