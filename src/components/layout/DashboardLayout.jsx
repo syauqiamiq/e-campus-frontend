@@ -38,7 +38,7 @@ const DashboardLayout = ({ children }) => {
 	return (
 		<div>
 			<DashboardNavbar />
-			<div className="container mx-auto mt-28 grid grid-cols-12 gap-5 !sticky">
+			<div className="container mx-auto mt-28 grid grid-cols-12 gap-5 mb-10 !sticky">
 				<div className="hidden lg:block md:col-span-3">
 					<div
 						className={`min-h-[70vh] rounded-xl bg-white ${
