@@ -4,7 +4,7 @@ import React from "react";
 
 const ScheduleCard = ({ data }) => {
 	return (
-		<div className="flex  min-h-[200px] bg-white rounded-xl">
+		<div className="flex   bg-white rounded-xl">
 			<div className="rounded-full h-16 items-center bg-campus-blue relative left-0 top-10 w-[10px]"></div>
 			<div className="ml-4 flex flex-col gap-3 p-5">
 				<div className="flex gap-3 items-center">
