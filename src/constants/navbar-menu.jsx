@@ -27,11 +27,6 @@ export const navbarMenu = [
 		icon: <AccountBalanceWalletOutlined />,
 	},
 	{
-		path: "/dashboard/pendaftaran",
-		title: "Pendaftaran",
-		icon: <AssignmentOutlined />,
-	},
-	{
 		path: "/dashboard/pengumpulan-berkas",
 		title: "Pengumpulan Berkas",
 		icon: <FeedOutlined />,
