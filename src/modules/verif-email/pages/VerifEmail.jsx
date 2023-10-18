@@ -2,8 +2,10 @@ import Layout from "@components/layout/Layout";
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { useRouter } from "next/router";
 
 const VerifEmail = () => {
+	const router = useRouter();
 	return (
 		<Layout>
 			<div className="flex justify-center p-3">
@@ -61,6 +63,7 @@ const VerifEmail = () => {
 							<Button
 								className="bg-campus-blue rounded-3xl font-medium px-6 py-3 w-80 md:w-9/12"
 								variant="contained"
+								onClick={() => router.push("/verif-success")}
 							>
 								Verifikasi
 							</Button>
