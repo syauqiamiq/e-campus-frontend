@@ -2,8 +2,9 @@ import DashboardLayout from "@components/layout/DashboardLayout";
 import { AssignmentOutlined, CalendarMonthOutlined } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import React from "react";
-import { scheduleData } from "../constants/schedule-dummy";
+
 import ScheduleCard from "../components/ScheduleCard";
+import { scheduleData } from "../constants/schedule-dummy";
 
 const JadwalBimbinganPage = () => {
 	return (
@@ -16,7 +17,7 @@ const JadwalBimbinganPage = () => {
 				</div>
 				{scheduleData.map((v, i) => {
 					return (
-						<div key={i} className="col-span-6 ">
+						<div key={i} className="col-span-12 md:col-span-6 ">
 							<ScheduleCard data={v} />
 						</div>
 					);
