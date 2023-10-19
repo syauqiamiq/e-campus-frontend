@@ -30,7 +30,7 @@ const LandingPage = () => {
 			<div className="mt-28 ">
 				<div className="container mx-auto grid grid-cols-12 gap-10 w-full py-20">
 					<div className="col-span-12 md:col-span-6 md:p-15 p-10 justify-center w-full h-full align-middle">
-						<h1 className="text-5xl md:text-5xl text-justify">
+						<h1 className="text-5xl md:text-5xl">
 							<span className="font-light">Layanan</span>{" "}
 							<span className="font-bold">Administrasi Kampus</span>{" "}
 							<span className="font-light">di</span>{" "}
